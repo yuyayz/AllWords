@@ -297,7 +297,6 @@ function goBack() {
 }
 
 function nextChallenge() {
-  clearInterval(timer); // ← これを追加して、前のタイマーを止める
   document.getElementById("detailArea").style.display = "none";
   document.getElementById("cardArea").innerHTML = "";
   document.getElementById("cardArea").style.display = "block";
@@ -316,4 +315,3 @@ function goToTop() {
 </script>
 </body>
 </html>
-
