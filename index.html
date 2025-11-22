@@ -139,7 +139,7 @@
   <footer style="text-align:center; margin-top:2rem; font-size: 1.4em; color: #555; line-height: 1.6;">
     operated by Nakahashi<br>
     (LINE: yuya987987)<br>
-    全員一緒に合格。連帯責任！
+    全員一緒に合格。Let's enjoy the process!（陽は必ず昇る）
   </footer>
 <script>
 let data = {};
@@ -297,15 +297,16 @@ function goBack() {
 }
 
 function nextChallenge() {
-  clearInterval(timer); // ← これを追加して、前のタイマーを止める
+  clearInterval(timer); // ← これが重要！
   document.getElementById("detailArea").style.display = "none";
   document.getElementById("cardArea").innerHTML = "";
   document.getElementById("cardArea").style.display = "block";
   document.getElementById("presentationControls").style.display = "none";
-  startChallenge();
+  startChallenge(); // ← 新しいカードとタイマーを表示
 }
 
 function goToTop() {
+  clearInterval(timer); // ← 念のため追加
   document.getElementById("cardArea").innerHTML = "";
   document.getElementById("detailCard").innerHTML = "";
   document.getElementById("topArea").style.display = "block";
@@ -316,4 +317,5 @@ function goToTop() {
 </script>
 </body>
 </html>
+
 
