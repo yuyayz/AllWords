@@ -219,15 +219,23 @@ function startTimer2() {
   timerDisplay.style.color = "#333";
   timerDisplay.style.fontWeight = "normal";
 
+  // 120秒後に終了音を鳴らす（end.mp3）
+  presAlertTimeout = setTimeout(() => {
+    playEnd(); // ← 新しい終了音
+  }, 120000);
+
   timer = setInterval(() => {
     seconds++;
     timerDisplay.textContent = `プレゼン時間: ${seconds}s`;
     if (seconds >= 120) {
       timerDisplay.style.color = "red";
       timerDisplay.style.fontWeight = "bold";
+      playEnd();        // ← 終了音を鳴らす
+      clearInterval(timer); // 必要ならタイマー停止
     }
   }, 1000);
 }
+
 
 // Stopボタン
 stopBtn.addEventListener("click", () => {
@@ -317,6 +325,7 @@ function goToTop() {
 </script>
 </body>
 </html>
+
 
 
 
