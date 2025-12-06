@@ -15,7 +15,7 @@
     { "word": "ほうとう", "reps": ["山梨", "麺料理", "かぼちゃ", "郷土料理", "鍋", "冬"] },
     { "word": "長崎ちゃんぽん", "reps": ["長崎", "麺料理", "中華", "野菜", "海鮮", "郷土料理"] },
     { "word": "ゴーヤチャンプル", "reps": ["沖縄", "ゴーヤ", "豆腐", "炒め物", "郷土料理", "健康"] },
-    { "word": "おやき", "reps": ["長野", "dumpling-like food", "a dough of wheat, buckwheat, or rice", "offerings to ancestors", preserve seasonal ingredients", "祭り"] },
+    { "word": "おやき", "reps": ["長野", "dumpling-like food", "a dough of wheat, buckwheat, or rice", "offerings to ancestors", "preserve seasonal ingredients", "祭り"] },
     { "word": "八つ橋", "reps": ["京都", "glutinous rice flour", "cinnamon", "土産", "生八つ橋", "観光"] },
     { "word": "大乗仏教", "reps": ["仏教", "思想", "Mahayana", "禅寺", "修行", "親交"] },
     { "word": "辛子レンコン", "reps": ["熊本", "郷土料理", "レンコン", "辛子", "酒肴", "伝統"] },
@@ -345,6 +345,7 @@
     {"word": "池泉回遊式庭園", "reps": ["庭園様式", "浜離宮恩賜庭園", "室町時代", "回遊", "景勝の再現", "茶亭や東屋"]} 
 
 ]
+
 
 
 
